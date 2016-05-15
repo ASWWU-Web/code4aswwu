@@ -16,8 +16,15 @@ import { Login } from "./login.component";
   directives: [ROUTER_DIRECTIVES],
   providers: [ROUTER_PROVIDERS],
   template: `
-  <h1> Code 4 ASWWU</h1>
-  <router-outlet></router-outlet>
+  <div class="jumbotron jumbotron-fluid">
+    <div class="container">
+      <h1 class="display-3 text-center">Code 4 ASWWU</h1>
+      <p class="lead text-center">Get paid whenever to work wherever. </p>
+    </div>
+  </div>
+  <div class="container">
+    <router-outlet></router-outlet>
+  </div>
   `
 })
 
