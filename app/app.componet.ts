@@ -2,6 +2,7 @@ import { Component } from "@angular/core";
 import { RouteConfig, ROUTER_DIRECTIVES, ROUTER_PROVIDERS } from '@angular/router-deprecated';
 
 import { Login } from "./login.component";
+import { ASWWU } from "./aswwu.service";
 
 @RouteConfig([
   {
@@ -14,7 +15,7 @@ import { Login } from "./login.component";
 @Component({
   selector: "my-app",
   directives: [ROUTER_DIRECTIVES],
-  providers: [ROUTER_PROVIDERS],
+  providers: [ROUTER_PROVIDERS,ASWWU],
   template: `
   <div class="jumbotron jumbotron-fluid">
     <div class="container">
@@ -28,4 +29,6 @@ import { Login } from "./login.component";
   `
 })
 
-export class Appcomponent { }
+export class Appcomponent {
+  constructor(public aswwu: ASWWU) { }
+}

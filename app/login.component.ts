@@ -1,4 +1,5 @@
 import { Component } from "@angular/core";
+import { ASWWU } from "./aswwu.service";
 
 @Component({
   selector: "login",
@@ -6,6 +7,7 @@ import { Component } from "@angular/core";
   <div class="row">
     <div class="col-sm-12 col-md-4 col-md-offset-4">
       <h2> Login</h2>
+
       <form id="login">
       <fieldset class="form-group">
         <label for="email">Email</label>
@@ -15,9 +17,9 @@ import { Component } from "@angular/core";
         <label for="password">Password</label>
         <input type="password" class="form-control" id="password" placeholder="Password">
       </fieldset>
+      <small> Use your WWU login. </small>
       </form>
       <button type="submit" form='login' class="btn btn-primary" (click)="login()">Login</button>
-
     </div>
   </div>
 
@@ -25,8 +27,10 @@ import { Component } from "@angular/core";
 })
 
 export class Login {
-  thingy= "Whats up?"
+  constructor(public aswwu: ASWWU) { }
   login(){
-    console.log("Logging in");
+    this.aswwu.login();
+    this.aswwu.setAuth();
+    console.log(this.aswwu.getAuth());
   }
 }
