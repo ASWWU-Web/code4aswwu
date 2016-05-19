@@ -1,28 +1,131 @@
+<!doctype html>
 <html>
-  <head>
-    <title>Angular 2 QuickStart</title>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <!--Bootstrap CSS file -->
-    <link rel="stylesheet" href="./node_modules/bootstrap/dist/css/bootstrap.min.css">
 
-    <!-- 1. Load libraries -->
-     <!-- Polyfill(s) for older browsers -->
-    <script src="node_modules/es6-shim/es6-shim.min.js"></script>
+<head>
+  <meta charset="utf-8">
+  <title>Code4aswwu</title>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.2/css/bootstrap.min.css" integrity="sha384-y3tfxAZXuh4HwSYylfB+J125MxIs6mR5FOHamPBG064zB+AFeWH94NdvaCBm8qnd" crossorigin="anonymous">
+  <link href='https://fonts.googleapis.com/css?family=VT323' rel='stylesheet' type='text/css'>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
 
-    <script src="node_modules/zone.js/dist/zone.js"></script>
-    <script src="node_modules/reflect-metadata/Reflect.js"></script>
-    <script src="node_modules/systemjs/dist/system.src.js"></script>
+  <!-- Service worker support is disabled by default.
+       Install the worker script and uncomment to enable.
+       Only enable service workers in production.
+  <script type="text/javascript">
+    if ('serviceWorker' in navigator) {
+      navigator.serviceWorker.register('/worker.js').catch(function(err) {
+        console.log('Error installing service worker: ', err);
+      });
+    }
+  </script>
+  -->
+  <style>
+  .code {
+    font-family: 'VT323';
+  }
+  </style>
+</head>
 
-    <!-- 2. Configure SystemJS -->
-    <script src="systemjs.config.js"></script>
-    <script>
-      System.import('app').catch(function(err){ console.error(err);  });
-    </script>
-  </head>
-      <base href="./">
-  <!-- 3. Display the application -->
-  <body>
-    <my-app>Loading...</my-app>
-  </body>
+<body>
+  <div class="jumbotron jumbotron-fluid" style="
+  background: -webkit-linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('http://avocaventures.com/wp-content/uploads/2014/11/lines-of-code.jpg');
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  display: block;
+  background-position: center;
+  background-size: cover;">
+    <div class="container">
+      <h1 class="display-3 text-xs-center" style="color:white;font-family: 'VT323';">Code 4 ASWWU</h1>
+      <p class="lead text-xs-center" style="color:white;font-family: 'VT323';">Get paid whenever to work wherever. </p>
+    </div>
+  </div>
+  <div class="container">
+    <div class="row">
+      <div class="col-xs-12">
+        <h1 class="text-xs-center code"> Applying is as easy as...</h1>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col col-md-4">
+        <h1 class="display-3 text-xs-center code">1</h1>
+        <p class="text-xs-center">Fill out the <a href="http://goo.gl/forms/ozmbUCKoy3XJxQs33">google form.</a></p>
+      </div>
+      <div class="col col-md-4">
+        <h1 class="display-3 text-xs-center code">2</h1>
+        <p class="text-xs-center">Fill out the <a href="https://aswwu.com/form">ASWWU form</a></p>
+      </div>
+      <div class="col col-md-4">
+        <h1 class="display-3 text-xs-center code">3</h1>
+        <p> Send <a href="mailto:ryan.rabello@wallawalla.edu">ryan.rabello@wallawalla.edu</a> an email with your resume and ASWWU application form attached.</p>
+      </div>
+    </div>
+  </div>
+  <div class="jumbotron jumbotron-fluid" style="
+  background: -webkit-linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('http://newshour-tc.pbs.org/newshour/wp-content/uploads/2015/03/coding.jpg');
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  display: block;
+  background-position: center;
+  background-size: cover;">
+    <div class="container">
+      <h1 class="display-3 text-xs-center" style="color:white;font-family: 'VT323';">Why work for ASWWU web?</h1>
+    </div>
+  </div>
+
+  <div class="container">
+    <div class="row">
+      <div class="col col-md-6 col-md-offset-3">
+        <p>
+          <strong>1)</strong> You get paid to learn how to code.
+          <br>
+          <strong>2)</strong> Get your best ideas at 3 am? No problem.
+          <br>
+          <strong>3)</strong> Work from anywhere, including Timbuktu.
+          <br>
+          <strong>4)</strong> Everything you do for ASWWU will look REALLY good on a resume; trust me.
+          <br>
+          <strong>5)</strong> [almost] Anything is possible with a little coding.
+        </p>
+      </div>
+
+    </div>
+  </div>
+
+  <div class="jumbotron jumbotron-fluid" style="
+  background: -webkit-linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), url('https://media.licdn.com/mpr/mpr/p/3/005/08c/1cc/0f286f6.jpg');
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  display: block;
+  background-position: center;
+  background-size: cover;">
+    <div class="container">
+      <h1 class="display-3 text-xs-center" style="color:white;font-family: 'VT323';">return;</h1>
+    </div>
+  </div>
+
+  <nav class="navbar navbar-fixed-bottom navbar-light bg-faded">
+    <a href="#" class="navbar-brand">Code4ASWWU</a>
+    <ul class="nav navbar-nav">
+      <li class="nav-item">
+        <a class="nav-link" href="https://aswwu.com">ASWWU</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="http://wallawalla.edu ">WWU</a>
+      </li>
+    </ul>
+  </nav>
+
+
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.2/js/bootstrap.min.js" integrity="sha384-vZ2WRJMwsjRMW/8U7i6PWi6AlO1L79snBrmgiDpgIWJ82z8eA5lenwvxbMV1PAh7" crossorigin="anonymous"></script>
+
+</body>
+
 </html>
